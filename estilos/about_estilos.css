@@ -254,7 +254,7 @@ body {
     align-items: center;
     font-family: 'Oswald';
     color: #fff;
-    margin: 50px 450px;
+    margin: 50px 300px;
 }
 
 .aspiracion{
@@ -381,7 +381,7 @@ ol{
     margin-right: 5%;
     padding-right: 5%;
     font-family: 'Oswald';
-    font-size: 30px;
+    font-size: 25px;
     line-height: 1.5;
     letter-spacing: 1px;
     text-align: left;
@@ -391,7 +391,7 @@ ol{
 .informacionxdd {
     width: 60%;
     font-family: 'Oswald';
-    font-size: 30px;
+    font-size: 25px;
     line-height: 1.5;
     letter-spacing: 1px;
     text-align: left;
