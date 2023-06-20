@@ -144,7 +144,7 @@ nav {
     display: flex;
     justify-content: space-between;
     background-color: #161a1d;
-    padding: 25px 50px;
+    padding: 30px 50px;
 }
 
 nav ul,
@@ -152,10 +152,6 @@ nav li {
     display: inline;
     margin: 0;
     padding: 0;
-}
-
-nav ul {
-    margin-right: 100px;
 }
 
 nav li {
@@ -418,4 +414,49 @@ ol{
     font-size: 40px;
     font-weight: bold;
     border-bottom: 2px solid #b1a7a6;
+}
+
+#login{
+    color: #fff;
+    text-decoration: none;
+    font-family: 'Oswald';
+
+}
+
+#register{
+    color: #fff;
+    text-decoration: none;
+    font-family: 'Oswald';
+    border: 3px solid #00b4d8;
+    padding: 7px 13px;
+    border-radius: 20px;
+    transition: 0.2s;
+}
+
+#register:hover{
+    background-color: #00b4d8;
+}
+
+.inicios{
+    margin-right: 100px;
+    color: #fff;
+    font-family: 'Oswald';
+}
+
+#logout{
+    color: #fff;
+    font-size: 18px;
+    text-decoration: none;
+    border: 3px solid #00b4d8;
+    padding: 7px 13px;
+    border-radius: 20px;
+    transition: 0.2s;
+}
+
+#logout:hover{
+    background-color: #00b4d8;
+}
+
+#nombreUsuario{
+    color: #fff;
 }

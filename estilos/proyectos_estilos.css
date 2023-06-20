@@ -154,10 +154,6 @@ nav li {
     padding: 0;
 }
 
-nav ul {
-    margin-right: 0;
-}
-
 nav li {
     margin-right: 30px;
     letter-spacing: 1px;
@@ -256,4 +252,48 @@ body {
     right: 0;
     padding-bottom: 50px;
     margin-right: 500px;
+}
+
+#login{
+    color: #fff;
+    text-decoration: none;
+    font-family: 'Oswald';
+
+}
+
+#register{
+    color: #fff;
+    text-decoration: none;
+    font-family: 'Oswald';
+    border: 3px solid #00b4d8;
+    padding: 7px 13px;
+    border-radius: 20px;
+    transition: 0.2s;
+}
+
+#register:hover{
+    background-color: #00b4d8;
+}
+
+.inicios{
+    color: #fff;
+    font-family: 'Oswald';
+}
+
+#logout{
+    color: #fff;
+    font-size: 18px;
+    text-decoration: none;
+    border: 3px solid #00b4d8;
+    padding: 7px 13px;
+    border-radius: 20px;
+    transition: 0.2s;
+}
+
+#logout:hover{
+    background-color: #00b4d8;
+}
+
+#nombreUsuario{
+    color: #fff;
 }
