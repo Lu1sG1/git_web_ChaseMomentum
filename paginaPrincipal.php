@@ -19,21 +19,12 @@ session_start();
     <nav id="navbar">
         <span id="logo">CHASEMOMENTUM</span>
         <ul>
-<<<<<<< HEAD:paginaPrincipal.html
-            <li><a href="paginaPrincipal.html" class="navElemento">Home</a></li>
-            <li><a href="#contact" class="navElemento">Contact</a></li>
-            <li> <a href="about.html" class="navElemento">About</a></li>
-            <li><a href="blog.html" class="navElemento">Blog</a></li>
-            <li><a href="servicios.html" class="navElemento">Services</a></li>
-            <li><a href="proyectos.html" class="navElemento">Projects</a></li>
-=======
             <li><a href="paginaPrincipal.php" class="navElemento">Home</a></li>
             <li><a href="paginaPrincipal.php" class="navElemento">Contact</a></li>
             <li> <a href="about.php" class="navElemento">About</a></li>
             <li><a href="blog.php" class="navElemento">Blog</a></li>
             <li><a href="servicios.php" class="navElemento">Services</a></li>
             <li><a href="proyectos.php" class="navElemento">Projects</a></li>
->>>>>>> bf25c823c5ee6877b82efc7b33f5fd51b9763ac7:paginaPrincipal.php
         </ul>
         <?php
         if (isset($_SESSION["user"])) {

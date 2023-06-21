@@ -667,11 +667,10 @@ body {
 
 /*Cards*/
 .container-card{
-    
 	width: 100%;
     background-image: url("imagenes/project_jhin.jpg");
     background-size: cover;
-    background-repeat: no-repeat;
+  background-repeat: no-repeat;
 	display: flex;
     height: 600px;
 	margin: auto;
