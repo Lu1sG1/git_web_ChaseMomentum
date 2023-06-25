@@ -14,14 +14,40 @@ session_start();
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@400;700&display=swap" rel="stylesheet">
-<link href="layout/styles/layout.css" rel="stylesheet" type="text/css" media="all">
+<link href="estilos/layout.css" rel="stylesheet" type="text/css" media="all">
 </head>
-<body id="top">
-<!-- Top Background Image Wrapper -->
+<body>
 
+
+<!-- Top Background Image Wrapper -->
+<nav id="navbar">
+        <span id="logo">CHASEMOMENTUM</span>
+        <ul>
+            <li><a href="../paginaPrincipal.php" class="navElemento">Home</a></li>
+            <li><a href="../contacto.php" class="navElemento">Contact</a></li>
+            <li> <a href="../about.php" class="navElemento">About</a></li>
+            <li><a href="../blog/index.php" class="navElemento">Blog</a></li>
+            <li><a href="../servicios.php" class="navElemento">Services</a></li>
+            <li><a href="../proyectos/proyectos.php" class="navElemento">Projects</a></li>
+        </ul>
+        <?php
+        if (isset($_SESSION["user"])) {
+            $nombre_usuario = $_SESSION["user"];
+            echo "<ul class=inicios>
+            <li id=nombreUsuario>$nombre_usuario</li>
+            <li><a href=logout.php id=logout>Cerrar Sesion</a></li>
+            </ul>";
+        } else {
+            echo "<ul class='inicios'>
+            <li><a href='login.php' id='login'>Login</a></li>
+            <li><a href='registro.php' id='register'>register</a></li></ul>";
+        }
+        ?>
+    </nav>
 <div class="bgded overlay" style="background-image:url('../runas/jonia.jpg ');"> 
+
   </section>
-  <footer><a class="btn" style = "float:right"href="../paginaPrincipal.php">Volver al menu</a></footer>
+
 
   <div id="pageintro" class="hoc clear"> 
     <!-- ################################################################################################ -->
@@ -44,7 +70,7 @@ session_start();
     <section id="introblocks">
       <ul class="nospace group">
         <li class="one_third">
-          <figure><a class="imgover" href="#"><img src="images/coach_juan.jpg" alt="" style ="width:348px; height: 220px  ; "></a>
+          <figure><a><img src="images/coach_juan.jpg" alt="" style ="width:348px; height: 220px  ; "></a>
             <figcaption>
               <h6 class="heading">Increible coach</h6>
               <p>Con tan solo 400 victorias y 700 horas de juego Juan Sabbagh ha conseguido salir de bronce, ¡Felicidades!</p>
@@ -52,7 +78,7 @@ session_start();
           </figure>
         </li>
         <li class="one_third">
-          <figure><a class="imgover" href="#"><img src="../runas/retador.png" alt="" style ="width:348px; height: 220px; "></a>
+          <figure><a><img src="../runas/retador.png" alt="" style ="width:348px; height: 220px; "></a>
             <figcaption>
               <h6 class="heading">Ahora es más fácil llegar a retador</h6>
               <p>Después del último parche ahora solo requerimos 1000 puntos de liga en vez de 1500.</p>
@@ -60,7 +86,7 @@ session_start();
           </figure>
         </li>
         <li class="one_third">
-          <figure><a class="imgover" href="#"><img src="../runas/aniversario.jpg" alt="" style ="width:348px; height: 220px; "></a>
+          <figure><a><img src="../runas/aniversario.jpg" alt="" style ="width:348px; height: 220px; "></a>
             <figcaption>
               <h6 class="heading">¡ Feliz Aniversario !</h6>
               <p>Gracias a tu apoyo ChaseMomentum festeja 1 año ayudando a todos los retadores del mundo, checa constantemente nuestra página para próximas sorpresas.</p>
@@ -68,7 +94,7 @@ session_start();
           </figure>
         </li>
         <li class="one_third">
-          <figure><a class="imgover" href="#"><img src="../runas/faker.jpg" alt="" style ="width:348px; height: 220px; "></a>
+          <figure><a><img src="../runas/faker.jpg" alt="" style ="width:348px; height: 220px; "></a>
             <figcaption>
               <h6 class="heading"> ¡ Feliz cumpleaños al mejor de todos !</h6>
               <p>Nuestro mejor coach celebra su cumpleaños número 27, todo el equipo de ChaseMomentum le manda un abrazo y muchas felicitaciones.</p>
@@ -76,7 +102,7 @@ session_start();
           </figure>
         </li>
         <li class="one_third">
-          <figure><a class="imgover" href="#"><img src="../estilos/imagenes/cris.jpg" alt="" style ="width:348px; height: 220px; "></a>
+          <figure><a><img src="../estilos/imagenes/cris.jpg" alt="" style ="width:348px; height: 220px; "></a>
             <figcaption>
               <h6 class="heading">Empiezan las clases</h6>
               <p>Nuestro querido coach Cristian empezará con streams en la plataforma twitch para ayudarnos a mejorar y aprender de manera gratuita.</p>
@@ -84,7 +110,7 @@ session_start();
           </figure>
         </li>
         <li class="one_third">
-          <figure><a class="imgover" href="#"><img src="../runas/yas.gif" alt="" style ="width:348px; height: 220px; "></a>
+          <figure><a><img src="../runas/yas.gif" alt="" style ="width:348px; height: 220px; "></a>
             <figcaption>
               <h6 class="heading"> ¿ Skins gratis ?</h6>
               <p>Con motivo de nuestro primer aniversario regalaremos una skin legendaria a todos los que contraten por lo menos 2 horas de couching  .</p>
