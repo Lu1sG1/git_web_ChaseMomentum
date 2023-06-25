@@ -23,7 +23,7 @@ session_start();
         <span id="logo">CHASEMOMENTUM</span>
         <ul>
             <li><a href="paginaPrincipal.php" class="navElemento">Home</a></li>
-            <li><a href="paginaPrincipal.php" class="navElemento">Contact</a></li>
+            <li><a href="contacto.php" class="navElemento">Contact</a></li>
             <li> <a href="about.php" class="navElemento">About</a></li>
             <li><a href="blog/index.php" class="navElemento">Blog</a></li>
             <li><a href="servicios.php" class="navElemento">Services</a></li>
