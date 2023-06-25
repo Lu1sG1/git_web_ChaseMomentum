@@ -101,7 +101,7 @@ session_start();
         <div class=" col-md-6">
           <div class="welcome_detail" style="color:white ;">
             <h2>
-              "Hasta las puertas más pesadas puede ser abiertas."
+              "Hasta las puertas más pesadas pueden ser abiertas"
             </h2>
             <p>
               En ChaseMomentum trabajamos duro cada día para seguir creciendo y así brindar el mejor servicio y experiencia a nuestros
@@ -140,7 +140,7 @@ session_start();
               Permíteme presentarte a nuestro equipo promesa de League of Legends, un grupo de jugadores excepcionales que poseen 
               un talento y una pasión innegables por el juego. Con un enfoque dedicado en mejorar constantemente y alcanzar la cima,
                este equipo muestra un potencial ilimitado.Este equipo promesa está destinado a dejar 
-               una huella en el escenario competitivo de League of Legends. <br><b>"Lucharé, fracasare pero rendirme es un privilegio que no tengo."</b>
+               una huella en el escenario competitivo de League of Legends. <br><b>"Lucharé, fracasare pero rendirme es un privilegio que no tengo"</b>
             </p>
           </div>
         </div>
@@ -193,7 +193,7 @@ session_start();
               Dentro de ChaseMomentum hemos tenido el placer de trabajar con jugadores que gracias a nuestros servicios 
               lograron alcanzar el máximo nivel, podemos decir con orgullo que estos jugadores fueron un proyecto creado 
               y guiado por nuestros coaches.
-              <br><b>"Los vencedores son los únicos autores de la historia. Es hora de escribir nuestro capítulo."</b>
+              <br><b>"Los vencedores son los únicos autores de la historia. Es hora de escribir nuestro capítulo"</b>
             </p>
           </div>
         </div>
@@ -221,7 +221,7 @@ session_start();
               Con nuestro enfoque integral, técnico y emocional, estamos aquí para ayudarte a alcanzar tus metas competitivas 
               y destacarte en el escenario de los esports. ¡Únete a nosotros y descubre cómo llevar tu equipo al siguiente nivel!
               <br>¡Tuwuu también puedes ser uno de estos jugadores!
-              <br><b>"Los exploradores auténticos siguen la brújula de su corazón."</b>
+              <br><b>"Los exploradores auténticos siguen la brújula de su corazón"</b>
             </p>
           </div>
         </div>
