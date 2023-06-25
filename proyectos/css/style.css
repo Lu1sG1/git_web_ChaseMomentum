@@ -231,3 +231,43 @@ body {
 .story_section .story_detail-btn a img {
   width: 25px;
 }
+
+nav{
+  position: fixed;
+  z-index: 1;
+  width: 100%;
+  font-size: 20px;
+  display: flex;
+  justify-content: space-between;
+  background-color: #161a1d;
+  padding: 30px 50px;
+}
+
+nav ul, nav li{
+  display: inline;
+  margin: 0;
+  padding: 0;
+}
+
+nav li{
+  margin-right: 30px;
+  letter-spacing: 1px;
+}
+
+.navElemento{
+  text-decoration: none;
+  font-family: 'Oswald';
+  color: #ffffff;
+  transition: 0.5s;
+}
+
+#logo{
+  font-family: 'CustomFont';
+  color: #ffffff;
+  letter-spacing: 2px;
+  font-size: 30px;
+}
+
+.navElemento:hover{
+  color: #b1a7a6;
+}

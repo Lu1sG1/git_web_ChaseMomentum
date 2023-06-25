@@ -52,7 +52,7 @@ session_start();
             <li><a href='registro.php' id='register'>register</a></li></ul>";
         }
         ?>
-    </nav>
+  </nav>
 
   <!-- slider section -->
   <section class=" slider_section">
