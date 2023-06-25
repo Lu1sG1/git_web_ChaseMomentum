@@ -27,7 +27,7 @@ session_start();
             <li> <a href="about.php" class="navElemento">About</a></li>
             <li><a href="blog/index.php" class="navElemento">Blog</a></li>
             <li><a href="servicios.php" class="navElemento">Services</a></li>
-            <li><a href="proyectos.php" class="navElemento">Projects</a></li>
+            <li><a href="proyectos/proyectos.php" class="navElemento">Projects</a></li>
         </ul>
         <?php
         if (isset($_SESSION["user"])) {
