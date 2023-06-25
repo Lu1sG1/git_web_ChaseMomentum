@@ -5,9 +5,6 @@ session_start();
 <html>
 
 <head>
-  <!-- Basic -->
-  <meta charset="utf-8" />
-  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
   <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="../estilos/styles.css">
@@ -193,6 +190,7 @@ session_start();
               Dentro de ChaseMomentum hemos tenido el placer de trabajar con jugadores que gracias a nuestros servicios 
               lograron alcanzar el máximo nivel, podemos decir con orgullo que estos jugadores fueron un proyecto creado 
               y guiado por nuestros coaches.
+              <br>¡Tu también puedes ser uno de estos jugadores!
               <br><b>"Los vencedores son los únicos autores de la historia. Es hora de escribir nuestro capítulo"</b>
             </p>
           </div>
@@ -220,7 +218,6 @@ session_start();
               donde cada jugador pueda desarrollar sus fortalezas, superar obstáculos y perfeccionar su juego. 
               Con nuestro enfoque integral, técnico y emocional, estamos aquí para ayudarte a alcanzar tus metas competitivas 
               y destacarte en el escenario de los esports. ¡Únete a nosotros y descubre cómo llevar tu equipo al siguiente nivel!
-              <br>¡Tuwuu también puedes ser uno de estos jugadores!
               <br><b>"Los exploradores auténticos siguen la brújula de su corazón"</b>
             </p>
           </div>
