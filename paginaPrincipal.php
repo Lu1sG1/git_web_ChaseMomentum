@@ -12,7 +12,23 @@ session_start();
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@400;700&display=swap" rel="stylesheet">
-    <title>Document</title>
+    <title>ChaseMomentum</title>
+    <style>
+        .boton_contacto {
+            font-size: 30px;
+            font-family: 'Oswald';
+            text-decoration: none;
+            color: #ffffff;
+            border: 4px solid white;
+            padding: 15px;
+            transition: 0.5s;
+        }
+
+        .boton_contacto:hover {
+            background-color: #ffffff;
+            color: #161a1d;
+        }
+    </style>
 </head>
 
 <body>
@@ -20,7 +36,7 @@ session_start();
         <span id="logo">CHASEMOMENTUM</span>
         <ul>
             <li><a href="paginaPrincipal.php" class="navElemento">Home</a></li>
-            <li><a href="paginaPrincipal.php" class="navElemento">Contact</a></li>
+            <li><a href="contacto.php" class="navElemento">Contact</a></li>
             <li> <a href="about.php" class="navElemento">About</a></li>
             <li><a href="blog/index.php" class="navElemento">Blog</a></li>
             <li><a href="servicios.php" class="navElemento">Services</a></li>
@@ -29,13 +45,12 @@ session_start();
         <?php
         if (isset($_SESSION["user"])) {
             $nombre_usuario = $_SESSION["user"];
-            echo"<ul class=inicios>
+            echo "<ul class=inicios>
             <li id=nombreUsuario>$nombre_usuario</li>
             <li><a href=logout.php id=logout>Cerrar Sesion</a></li>
             </ul>";
-        }
-        else{
-            echo"<ul class='inicios'>
+        } else {
+            echo "<ul class='inicios'>
             <li><a href='login.php' id='login'>Login</a></li>
             <li><a href='registro.php' id='register'>register</a></li></ul>";
         }
@@ -54,7 +69,7 @@ session_start();
             </div>
             <div class="opciones">
                 <a href="#info" id="bot_aprende">Aprende mas</a>
-                <a href="servicios.html" id="empieza">Empieza ahora</a>
+                <a href="servicios.php" id="empieza">Empieza ahora</a>
             </div>
         </div>
 
@@ -103,7 +118,7 @@ session_start();
         y la experiencia de los miembros de nuestro equipo
         <div style="text-align: center;">
             <br>
-            <a href="about.html" class="boton_servicios">About</a>
+            <a href="about.php" class="boton_servicios">About</a>
         </div>
     </div>
     <!--   Tarjetas-->
@@ -165,7 +180,7 @@ session_start();
                 sus tarifas.
                 <div style="text-align: center;">
                     <br>
-                    <a href="servicios.html" class="boton_servicios">Servicios</a>
+                    <a href="servicios.php" class="boton_servicios">Servicios</a>
                 </div>
 
             </div>
@@ -189,7 +204,7 @@ session_start();
                 la pagina. Haz click en el siguiente boton para entrar al blog
                 <div style="text-align: center;">
                     <br>
-                    <a href="servicios.html" class="boton_servicios">Blog</a>
+                    <a href="blog/index.php" class="boton_servicios">Blog</a>
                 </div>
             </div>
             <div class="imagenes">
@@ -199,7 +214,7 @@ session_start();
     </div>
 
     <div class="xdd">
-        <img src="estilos/imagenes/visax-QIILbFdUzy4-unsplash.jpg" class="imaen2">
+        <img src="estilos/imagenes/visax-QIILbFdUzy4-unsplash.jpg" class="imaen2" style="height: 300px;">
         <div class="centro2">
             <h1 class="contacto">
                 Ponte en contacto con nosotros
@@ -207,11 +222,13 @@ session_start();
             <h1 class="titulo3">
                 Si tienes dudas o quieres formar parte del equipo, llena el formulario que se muestra a continuacion
             </h1>
+            <br><br>
+            <a href="contacto.php" class="boton_contacto">Contacto</a>
         </div>
 
     </div>
-
-    <form action="">
+    <!--
+    <form action="" method="post">
         <div class="form">
             <div class="contenedor1">
                 <div id="tituloContacto">
@@ -224,26 +241,35 @@ session_start();
                             <input type="text" name="nombre" placeholder="Ingresa tu nombre" class="in">
                         </div>
                         <div class="ingreso">
-                            <label for="nombre" class="lab">Correo electronico:</label><br>
-                            <input type="text" name="nombre" placeholder="Ingresa tu correo" class="in">
+                            <label for="correo" class="lab">Correo electronico:</label><br>
+                            <input type="email" name="correo" placeholder="Ingresa tu correo" class="in">
                         </div>
                         <div class="ingreso">
-                            <label for="nombre" class="lab">Sitio web o red social:</label><br>
-                            <input type="text" name="nombre" placeholder="Ingresa tu sitio web o red social(opcional)"
+                            <label for="web" class="lab">Sitio web o red social:</label><br>
+                            <input type="url" name="web" placeholder="Ingresa tu sitio web o red social(opcional)"
                                 class="in">
                         </div>
                     </div>
                     <div class="der">
                         <div class="ingreso">
-                            <label for="nombre" class="lab">Telefono:</label><br>
-                            <input type="text" name="nombre" placeholder="Ingresa tu numero de telefono(opcional)"
+                            <label for="telefono" class="lab">Telefono:</label><br>
+                            <input type="text" name="telefono" placeholder="Ingresa tu numero de telefono(opcional)"
                                 class="in">
+                        </div>
+                        <div class="ingreso">
+                            <label for="mensaje" class="lab">Mensaje:</label><br>
+                            <textarea name="mensaje" class="in" id="mensaje"
+                                style="height: 190px;resize: none;"></textarea>
                         </div>
                     </div>
                 </div>
+                <br>
+                <div class="botonSub" style="text-align: center;">
+                    <input type="submit" style="background-color: #fff; padding: 10px;">
+                </div>
             </div>
         </div>
-    </form>
+    </form>-->
 
     <div class="footer">
         <span id="logo" style="color: #00b4d8;">CHASEMOMENTUM</span>
