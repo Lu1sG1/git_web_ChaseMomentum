@@ -333,7 +333,7 @@ session_start();
             <li><a href="#"><img src="iconos/icons8-linkedin-25.png" alt=""></a></li>
             <li><a href="#"><img src="iconos/icons8-youtube-25.png" alt=""></a></li>
         </ul>
-        <a href="terminos.html" class="terminos">Terminos legales</a>
+        <a href="terminos.php" class="terminos">Terminos legales</a>
     </div>
 
     <script>
