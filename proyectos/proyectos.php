@@ -44,12 +44,12 @@ session_start();
             $nombre_usuario = $_SESSION["user"];
             echo "<ul class=inicios>
             <li id=nombreUsuario>$nombre_usuario</li>
-            <li><a href=logout.php id=logout>Cerrar Sesion</a></li>
+            <li><a href=../logout.php id=logout>Cerrar Sesion</a></li>
             </ul>";
         } else {
             echo "<ul class='inicios'>
-            <li><a href='login.php' id='login'>Login</a></li>
-            <li><a href='registro.php' id='register'>register</a></li></ul>";
+            <li><a href='../login.php' id='login'>Login</a></li>
+            <li><a href='../registro.php' id='register'>register</a></li></ul>";
         }
         ?>
   </nav>
