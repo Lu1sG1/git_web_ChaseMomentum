@@ -39,8 +39,8 @@ session_start();
             </ul>";
         } else {
             echo "<ul class='inicios'>
-            <li><a href='login.php' id='login'>Login</a></li>
-            <li><a href='registro.php' id='register'>register</a></li></ul>";
+            <li><a href='../login.php' id='login'>Login</a></li>
+            <li><a href='../registro.php' id='register'>register</a></li></ul>";
         }
         ?>
     </nav>
