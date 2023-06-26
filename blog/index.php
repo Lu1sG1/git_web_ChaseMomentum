@@ -35,7 +35,7 @@ session_start();
             $nombre_usuario = $_SESSION["user"];
             echo "<ul class=inicios>
             <li id=nombreUsuario>$nombre_usuario</li>
-            <li><a href=logout.php id=logout>Cerrar Sesion</a></li>
+            <li><a href=../logout.php id=logout>Cerrar Sesion</a></li>
             </ul>";
         } else {
             echo "<ul class='inicios'>
